@@ -91,7 +91,7 @@
 
   CGPoint velocityPoint = [gestureRecognizer velocityInView:self.petImageView];
 //  NSLog(@"%@", NSStringFromCGPoint(velocityPoint));
-  if (velocityPoint.x > 2000.0 || velocityPoint.y > 2000.0) {
+  if (velocityPoint.x > 1000.0 || velocityPoint.y > 1000.0) {
     self.cat.grumpy = YES;
 //    self.cat.currentStateImage = [UIImage imageNamed:@"grumpy.png"];
     [self.cat enterCurrentStateImage:[UIImage imageNamed:@"grumpy.png"]];
